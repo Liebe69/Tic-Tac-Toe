@@ -141,7 +141,7 @@ def main(playermove):
             return "Player"
         elif row1[2] == "X" and row2[1] == "X" and row3[0] == "X":
             return "Player"
-        elif row3[0] == "X" and row2[1] == "X" and row1[0] == "X":
+        elif row3[2] == "X" and row2[1] == "X" and row1[0] == "X":
             return "Player"
         elif row1[0] == "X" and row1[2] == "X" and row1[1] == "X":
             return "Player"
@@ -185,7 +185,7 @@ def main(playermove):
             return "Bot"
         elif row1[2] == "O" and row2[1] == "O" and row3[0] == "O":
             return "Bot"
-        elif row3[0] == "O" and row2[1] == "O" and row1[0] == "O":
+        elif row3[2] == "O" and row2[1] == "O" and row1[0] == "O":
             return "Bot"
         elif row1[0] == "O" and row1[2] == "O" and row1[1] == "O":
             return "Bot"

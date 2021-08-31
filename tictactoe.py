@@ -46,7 +46,51 @@ def main(playermove):
             playermove = False
             filled += 1
         else:
-            if row1[0] == "X" and row1[1] == "X" and row1[2] == " ":
+            if row1[0] == "O" and row1[1] == "O" and row1[2] == " ":
+                row1[2] = "O"
+            elif row2[0] == "O" and row2[1] == "O" and row2[2] == " ":
+                row2[2] = "O"
+            elif row3[0] == "O" and row3[1] == "O" and row3[2] == " ":
+                row3[2] = "O"
+            elif row1[1] == "O" and row1[2] == "O" and row1[0] == " ":
+                row1[0] = "O"
+            elif row2[1] == "O" and row2[2] == "O" and row2[0] == " ":
+                row2[0] = "O"
+            elif row3[1] == "O" and row3[2] == "O" and row3[0] == " ":
+                row3[0] = "O"
+            elif row1[0] == "O" and row2[0] == "O" and row3[0] == " ":
+                row3[0] = "O"
+            elif row1[1] == "O" and row2[1] == "O" and row3[1] == " ":
+                row3[1] = "O"
+            elif row1[2] == "O" and row2[2] == "O" and row3[2] == " ":
+                row3[2] = "O"
+            elif row3[0] == "O" and row2[0] == "O" and row1[0] == " ":
+                row1[0] = "O"
+            elif row3[1] == "O" and row2[1] == "O" and row1[1] == " ":
+                row1[1] = "O"
+            elif row3[2] == "O" and row2[2] == "O" and row1[2] == " ":
+                row1[2] = "O"
+            elif row1[0] == "O" and row2[1] == "O" and row3[2] == " ":
+                row3[2] = "O"
+            elif row2[1] == "O" and row3[2] == "O" and row1[0] == " ":
+                row1[0] = "O"
+            elif row1[2] == "O" and row2[1] == "O" and row3[0] == " ":
+                row3[0] = "O"
+            elif row3[0] == "O" and row2[1] == "O" and row1[2] == " ":
+                row1[0] = "O"
+            elif row1[0] == "O" and row1[2] == "O" and row1[1] == " ":
+                row1[1] = "O"
+            elif row2[0] == "O" and row2[2] == "O" and row2[1] == " ":
+                row2[1] = "O"
+            elif row3[0] == "O" and row3[2] == "O" and row3[1] == " ":
+                row3[1] = "O"
+            elif row1[0] == "O" and row3[0] == "O" and row2[0] == " ":
+                row2[0] = "O"
+            elif row1[1] == "O" and row3[1] == "O" and row2[1] == " ":
+                row2[1] = "O"
+            elif row1[2] == "O" and row3[2] == "O" and row2[2] == " ":
+                row2[2] = "O" #23423424
+            elif row1[0] == "X" and row1[1] == "X" and row1[2] == " ":
                 row1[2] = "O"
             elif row2[0] == "X" and row2[1] == "X" and row2[2] == " ":
                 row2[2] = "O"
